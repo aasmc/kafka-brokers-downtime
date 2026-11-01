@@ -10,6 +10,8 @@ SURVIVING_BROKERS="kafka-4:9092,kafka-5:9092,kafka-6:9092"
 BASELINE_SECONDS="${BASELINE_SECONDS:-15}"
 OUTAGE_SECONDS="${OUTAGE_SECONDS:-45}"
 RECOVERY_SECONDS="${RECOVERY_SECONDS:-20}"
+REPLICA_ASSIGNMENT="${REPLICA_ASSIGNMENT:-1:2:3}"
+RESULTS_ROOT="${RESULTS_ROOT:-results}"
 
 wait_for_cluster() {
   for attempt in $(seq 1 60); do
@@ -55,7 +57,7 @@ save_logs() {
 
 run_variant() {
   local variant="$1"
-  local output="$ROOT_DIR/results/$variant"
+  local output="$ROOT_DIR/$RESULTS_ROOT/$variant"
   mkdir -p "$output"
 
   echo "=== unclean.leader.election.enable=$variant ==="
@@ -68,7 +70,7 @@ run_variant() {
   docker exec kafka-1 /opt/kafka/bin/kafka-topics.sh \
     --bootstrap-server "$ALL_BROKERS" \
     --create --topic "$TOPIC" \
-    --replica-assignment 1:2:3 \
+    --replica-assignment "$REPLICA_ASSIGNMENT" \
     --config min.insync.replicas=2 \
     --config unclean.leader.election.enable="$variant" \
     > "$output/topic-create.txt" 2>&1
@@ -105,7 +107,7 @@ run_variant() {
   echo "recovery_finished_utc=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$output/timestamps.txt"
 
   save_logs "$output"
-  echo "Results saved to results/$variant"
+  echo "Results saved to $RESULTS_ROOT/$variant"
 }
 
 run_variant false

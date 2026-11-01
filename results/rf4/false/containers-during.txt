@@ -1,0 +1,9 @@
+NAME                   IMAGE                        COMMAND                  SERVICE     CREATED          STATUS                                PORTS
+kafka-1                apache/kafka:3.9.0           "/__cacert_entrypoin…"   kafka-1     26 seconds ago   Exited (137) Less than a second ago   
+kafka-2                apache/kafka:3.9.0           "/__cacert_entrypoin…"   kafka-2     26 seconds ago   Exited (137) Less than a second ago   
+kafka-3                apache/kafka:3.9.0           "/__cacert_entrypoin…"   kafka-3     26 seconds ago   Exited (137) Less than a second ago   
+kafka-4                apache/kafka:3.9.0           "/__cacert_entrypoin…"   kafka-4     26 seconds ago   Up 25 seconds                         9092/tcp
+kafka-5                apache/kafka:3.9.0           "/__cacert_entrypoin…"   kafka-5     26 seconds ago   Up 25 seconds                         9092/tcp
+kafka-6                apache/kafka:3.9.0           "/__cacert_entrypoin…"   kafka-6     26 seconds ago   Up 25 seconds                         9092/tcp
+kafka-experiment-app   kafka-brokers-downtime-app   "java -jar /app/app.…"   app         17 seconds ago   Up 17 seconds                         127.0.0.1:8080->8080/tcp, [::]:8080->8080/tcp
+zookeeper              zookeeper:3.8.4              "/docker-entrypoint.…"   zookeeper   26 seconds ago   Up 25 seconds                         2181/tcp, 2888/tcp, 3888/tcp, 8080/tcp
