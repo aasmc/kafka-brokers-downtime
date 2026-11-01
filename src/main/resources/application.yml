@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: kafka-downtime-experiment
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    producer:
+      client-id: experiment-producer
+      acks: all
+      retries: 2147483647
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        "[enable.idempotence]": true
+        "[delivery.timeout.ms]": 10000
+        "[request.timeout.ms]": 3000
+        "[max.block.ms]": 5000
+        "[linger.ms]": 0
+    consumer:
+      client-id: experiment-consumer
+      group-id: downtime-experiment
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    listener:
+      missing-topics-fatal: false
+
+experiment:
+  topic: ${EXPERIMENT_TOPIC:downtime-experiment}
+  producer:
+    interval-ms: 1000
+
+logging:
+  level:
+    org.apache.kafka.clients: INFO
+    org.springframework.kafka: INFO

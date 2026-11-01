@@ -1,0 +1,2 @@
+Topic: downtime-experiment	TopicId: _BC8wZnfS267eH0IJOCSJQ	PartitionCount: 1	ReplicationFactor: 3	Configs: min.insync.replicas=2,unclean.leader.election.enable=false
+	Topic: downtime-experiment	Partition: 0	Leader: none	Replicas: 1,2,3	Isr: 3	Elr: N/A	LastKnownElr: N/A

@@ -1,0 +1,143 @@
+x-kafka-common: &kafka-common
+  image: apache/kafka:3.9.0
+  command:
+    - /bin/bash
+    - -ec
+    - |
+      cat > /opt/kafka/config/server.properties <<EOF
+      broker.id=$${KAFKA_BROKER_ID}
+      zookeeper.connect=$${KAFKA_ZOOKEEPER_CONNECT}
+      listeners=$${KAFKA_LISTENERS}
+      advertised.listeners=$${KAFKA_ADVERTISED_LISTENERS}
+      listener.security.protocol.map=$${KAFKA_LISTENER_SECURITY_PROTOCOL_MAP}
+      inter.broker.listener.name=$${KAFKA_INTER_BROKER_LISTENER_NAME}
+      log.dirs=/var/lib/kafka/data
+      offsets.topic.replication.factor=$${KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR}
+      transaction.state.log.replication.factor=$${KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR}
+      transaction.state.log.min.isr=$${KAFKA_TRANSACTION_STATE_LOG_MIN_ISR}
+      group.initial.rebalance.delay.ms=$${KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS}
+      auto.create.topics.enable=$${KAFKA_AUTO_CREATE_TOPICS_ENABLE}
+      unclean.leader.election.enable=$${KAFKA_UNCLEAN_LEADER_ELECTION_ENABLE}
+      EOF
+      exec /opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties
+  depends_on:
+    - zookeeper
+  environment: &kafka-environment
+    KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    KAFKA_LISTENERS: PLAINTEXT://:9092
+    KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+    KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+    KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
+    KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
+    KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 2
+    KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+    KAFKA_AUTO_CREATE_TOPICS_ENABLE: false
+    KAFKA_UNCLEAN_LEADER_ELECTION_ENABLE: false
+  networks:
+    - kafka-net
+
+services:
+  zookeeper:
+    image: zookeeper:3.8.4
+    container_name: zookeeper
+    environment:
+      ZOO_4LW_COMMANDS_WHITELIST: ruok,mntr,srvr
+    volumes:
+      - zookeeper-data:/data
+      - zookeeper-log:/datalog
+    networks:
+      - kafka-net
+
+  kafka-1:
+    <<: *kafka-common
+    container_name: kafka-1
+    environment:
+      <<: *kafka-environment
+      KAFKA_BROKER_ID: 1
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka-1:9092
+    volumes:
+      - kafka-1-data:/var/lib/kafka/data
+
+  kafka-2:
+    <<: *kafka-common
+    container_name: kafka-2
+    environment:
+      <<: *kafka-environment
+      KAFKA_BROKER_ID: 2
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka-2:9092
+    volumes:
+      - kafka-2-data:/var/lib/kafka/data
+
+  kafka-3:
+    <<: *kafka-common
+    container_name: kafka-3
+    environment:
+      <<: *kafka-environment
+      KAFKA_BROKER_ID: 3
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka-3:9092
+    volumes:
+      - kafka-3-data:/var/lib/kafka/data
+
+  kafka-4:
+    <<: *kafka-common
+    container_name: kafka-4
+    environment:
+      <<: *kafka-environment
+      KAFKA_BROKER_ID: 4
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka-4:9092
+    volumes:
+      - kafka-4-data:/var/lib/kafka/data
+
+  kafka-5:
+    <<: *kafka-common
+    container_name: kafka-5
+    environment:
+      <<: *kafka-environment
+      KAFKA_BROKER_ID: 5
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka-5:9092
+    volumes:
+      - kafka-5-data:/var/lib/kafka/data
+
+  kafka-6:
+    <<: *kafka-common
+    container_name: kafka-6
+    environment:
+      <<: *kafka-environment
+      KAFKA_BROKER_ID: 6
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka-6:9092
+    volumes:
+      - kafka-6-data:/var/lib/kafka/data
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kafka-experiment-app
+    depends_on:
+      - kafka-1
+      - kafka-2
+      - kafka-3
+      - kafka-4
+      - kafka-5
+      - kafka-6
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka-1:9092,kafka-2:9092,kafka-3:9092,kafka-4:9092,kafka-5:9092,kafka-6:9092
+      EXPERIMENT_TOPIC: downtime-experiment
+    ports:
+      - "8080:8080"
+    networks:
+      - kafka-net
+
+networks:
+  kafka-net:
+    driver: bridge
+
+volumes:
+  zookeeper-data:
+  zookeeper-log:
+  kafka-1-data:
+  kafka-2-data:
+  kafka-3-data:
+  kafka-4-data:
+  kafka-5-data:
+  kafka-6-data:
