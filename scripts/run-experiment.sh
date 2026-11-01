@@ -12,6 +12,8 @@ OUTAGE_SECONDS="${OUTAGE_SECONDS:-45}"
 RECOVERY_SECONDS="${RECOVERY_SECONDS:-20}"
 REPLICA_ASSIGNMENT="${REPLICA_ASSIGNMENT:-1:2:3}"
 RESULTS_ROOT="${RESULTS_ROOT:-results}"
+export KAFKA_PRODUCER_ACKS="${KAFKA_PRODUCER_ACKS:-all}"
+export KAFKA_PRODUCER_IDEMPOTENCE="${KAFKA_PRODUCER_IDEMPOTENCE:-true}"
 
 wait_for_cluster() {
   for attempt in $(seq 1 60); do
@@ -59,6 +61,11 @@ run_variant() {
   local variant="$1"
   local output="$ROOT_DIR/$RESULTS_ROOT/$variant"
   mkdir -p "$output"
+  {
+    echo "replica_assignment=$REPLICA_ASSIGNMENT"
+    echo "producer_acks=$KAFKA_PRODUCER_ACKS"
+    echo "producer_idempotence=$KAFKA_PRODUCER_IDEMPOTENCE"
+  } > "$output/experiment-config.txt"
 
   echo "=== unclean.leader.election.enable=$variant ==="
   docker compose down -v --remove-orphans >/dev/null 2>&1 || true

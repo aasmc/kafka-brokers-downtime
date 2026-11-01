@@ -1,0 +1,897 @@
+kafka-4  | [2026-11-01 08:11:32,858] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+kafka-4  | [2026-11-01 08:11:32,999] INFO Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation (org.apache.zookeeper.common.X509Util)
+kafka-4  | [2026-11-01 08:11:33,059] INFO Registered signal handlers for TERM, INT, HUP (org.apache.kafka.common.utils.LoggingSignalHandler)
+kafka-4  | [2026-11-01 08:11:33,060] INFO starting (kafka.server.KafkaServer)
+kafka-4  | [2026-11-01 08:11:33,062] INFO Connecting to zookeeper on zookeeper:2181 (kafka.server.KafkaServer)
+kafka-4  | [2026-11-01 08:11:33,073] INFO [ZooKeeperClient Kafka server] Initializing a new session to zookeeper:2181. (kafka.zookeeper.ZooKeeperClient)
+kafka-4  | [2026-11-01 08:11:33,076] INFO Client environment:zookeeper.version=3.8.4-9316c2a7a97e1666d8f4593f34dd6fc36ecc436c, built on 2024-02-12 22:16 UTC (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,076] INFO Client environment:host.name=5578be7cfd32 (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,076] INFO Client environment:java.version=21.0.5 (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,076] INFO Client environment:java.vendor=Eclipse Adoptium (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,077] INFO Client environment:java.home=/opt/java/openjdk (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,077] INFO Client environment:java.class.path=/opt/kafka/bin/../libs/activation-1.1.1.jar:/opt/kafka/bin/../libs/aopalliance-repackaged-2.6.1.jar:/opt/kafka/bin/../libs/argparse4j-0.7.0.jar:/opt/kafka/bin/../libs/audience-annotations-0.12.0.jar:/opt/kafka/bin/../libs/caffeine-2.9.3.jar:/opt/kafka/bin/../libs/commons-beanutils-1.9.4.jar:/opt/kafka/bin/../libs/commons-cli-1.4.jar:/opt/kafka/bin/../libs/commons-collections-3.2.2.jar:/opt/kafka/bin/../libs/commons-digester-2.1.jar:/opt/kafka/bin/../libs/commons-io-2.14.0.jar:/opt/kafka/bin/../libs/commons-lang3-3.12.0.jar:/opt/kafka/bin/../libs/commons-logging-1.2.jar:/opt/kafka/bin/../libs/commons-validator-1.7.jar:/opt/kafka/bin/../libs/connect-api-3.9.0.jar:/opt/kafka/bin/../libs/connect-basic-auth-extension-3.9.0.jar:/opt/kafka/bin/../libs/connect-json-3.9.0.jar:/opt/kafka/bin/../libs/connect-mirror-3.9.0.jar:/opt/kafka/bin/../libs/connect-mirror-client-3.9.0.jar:/opt/kafka/bin/../libs/connect-runtime-3.9.0.jar:/opt/kafka/bin/../libs/connect-transforms-3.9.0.jar:/opt/kafka/bin/../libs/error_prone_annotations-2.10.0.jar:/opt/kafka/bin/../libs/hk2-api-2.6.1.jar:/opt/kafka/bin/../libs/hk2-locator-2.6.1.jar:/opt/kafka/bin/../libs/hk2-utils-2.6.1.jar:/opt/kafka/bin/../libs/jackson-annotations-2.16.2.jar:/opt/kafka/bin/../libs/jackson-core-2.16.2.jar:/opt/kafka/bin/../libs/jackson-databind-2.16.2.jar:/opt/kafka/bin/../libs/jackson-dataformat-csv-2.16.2.jar:/opt/kafka/bin/../libs/jackson-datatype-jdk8-2.16.2.jar:/opt/kafka/bin/../libs/jackson-jaxrs-base-2.16.2.jar:/opt/kafka/bin/../libs/jackson-jaxrs-json-provider-2.16.2.jar:/opt/kafka/bin/../libs/jackson-module-afterburner-2.16.2.jar:/opt/kafka/bin/../libs/jackson-module-jaxb-annotations-2.16.2.jar:/opt/kafka/bin/../libs/jackson-module-scala_2.13-2.16.2.jar:/opt/kafka/bin/../libs/jakarta.activation-api-1.2.2.jar:/opt/kafka/bin/../libs/jakarta.annotation-api-1.3.5.jar:/opt/kafka/bin/../libs/jakarta.inject-2.6.1.jar:/opt/kafka/bin/../libs/jakarta.validation-api-2.0.2.jar:/opt/kafka/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/opt/kafka/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/opt/kafka/bin/../libs/javassist-3.29.2-GA.jar:/opt/kafka/bin/../libs/javax.activation-api-1.2.0.jar:/opt/kafka/bin/../libs/javax.annotation-api-1.3.2.jar:/opt/kafka/bin/../libs/javax.servlet-api-3.1.0.jar:/opt/kafka/bin/../libs/javax.ws.rs-api-2.1.1.jar:/opt/kafka/bin/../libs/jaxb-api-2.3.1.jar:/opt/kafka/bin/../libs/jersey-client-2.39.1.jar:/opt/kafka/bin/../libs/jersey-common-2.39.1.jar:/opt/kafka/bin/../libs/jersey-container-servlet-2.39.1.jar:/opt/kafka/bin/../libs/jersey-container-servlet-core-2.39.1.jar:/opt/kafka/bin/../libs/jersey-hk2-2.39.1.jar:/opt/kafka/bin/../libs/jersey-server-2.39.1.jar:/opt/kafka/bin/../libs/jetty-client-9.4.56.v20240826.jar:/opt/kafka/bin/../libs/jetty-continuation-9.4.56.v20240826.jar:/opt/kafka/bin/../libs/jetty-http-9.4.56.v20240826.jar:/opt/kafka/bin/../libs/jetty-io-9.4.56.v20240826.jar:/opt/kafka/bin/../libs/jetty-security-9.4.56.v20240826.jar:/opt/kafka/bin/../libs/jetty-server-9.4.56.v20240826.jar:/opt/kafka/bin/../libs/jetty-servlet-9.4.56.v20240826.jar:/opt/kafka/bin/../libs/jetty-servlets-9.4.56.v20240826.jar:/opt/kafka/bin/../libs/jetty-util-9.4.56.v20240826.jar:/opt/kafka/bin/../libs/jetty-util-ajax-9.4.56.v20240826.jar:/opt/kafka/bin/../libs/jline-3.25.1.jar:/opt/kafka/bin/../libs/jopt-simple-5.0.4.jar:/opt/kafka/bin/../libs/jose4j-0.9.4.jar:/opt/kafka/bin/../libs/jsr305-3.0.2.jar:/opt/kafka/bin/../libs/kafka-clients-3.9.0.jar:/opt/kafka/bin/../libs/kafka-group-coordinator-3.9.0.jar:/opt/kafka/bin/../libs/kafka-group-coordinator-api-3.9.0.jar:/opt/kafka/bin/../libs/kafka-metadata-3.9.0.jar:/opt/kafka/bin/../libs/kafka-raft-3.9.0.jar:/opt/kafka/bin/../libs/kafka-server-3.9.0.jar:/opt/kafka/bin/../libs/kafka-server-common-3.9.0.jar:/opt/kafka/bin/../libs/kafka-shell-3.9.0.jar:/opt/kafka/bin/../libs/kafka-storage-3.9.0.jar:/opt/kafka/bin/../libs/kafka-storage-api-3.9.0.jar:/opt/kafka/bin/../libs/kafka-streams-3.9.0.jar:/opt/kafka/bin/../libs/kafka-streams-examples-3.9.0.jar:/opt/kafka/bin/../libs/kafka-streams-scala_2.13-3.9.0.jar:/opt/kafka/bin/../libs/kafka-streams-test-utils-3.9.0.jar:/opt/kafka/bin/../libs/kafka-tools-3.9.0.jar:/opt/kafka/bin/../libs/kafka-tools-api-3.9.0.jar:/opt/kafka/bin/../libs/kafka-transaction-coordinator-3.9.0.jar:/opt/kafka/bin/../libs/kafka_2.13-3.9.0.jar:/opt/kafka/bin/../libs/lz4-java-1.8.0.jar:/opt/kafka/bin/../libs/maven-artifact-3.9.6.jar:/opt/kafka/bin/../libs/metrics-core-2.2.0.jar:/opt/kafka/bin/../libs/metrics-core-4.1.12.1.jar:/opt/kafka/bin/../libs/netty-buffer-4.1.111.Final.jar:/opt/kafka/bin/../libs/netty-codec-4.1.111.Final.jar:/opt/kafka/bin/../libs/netty-common-4.1.111.Final.jar:/opt/kafka/bin/../libs/netty-handler-4.1.111.Final.jar:/opt/kafka/bin/../libs/netty-resolver-4.1.111.Final.jar:/opt/kafka/bin/../libs/netty-transport-4.1.111.Final.jar:/opt/kafka/bin/../libs/netty-transport-classes-epoll-4.1.111.Final.jar:/opt/kafka/bin/../libs/netty-transport-native-epoll-4.1.111.Final.jar:/opt/kafka/bin/../libs/netty-transport-native-unix-common-4.1.111.Final.jar:/opt/kafka/bin/../libs/opentelemetry-proto-1.0.0-alpha.jar:/opt/kafka/bin/../libs/osgi-resource-locator-1.0.3.jar:/opt/kafka/bin/../libs/paranamer-2.8.jar:/opt/kafka/bin/../libs/pcollections-4.0.1.jar:/opt/kafka/bin/../libs/plexus-utils-3.5.1.jar:/opt/kafka/bin/../libs/protobuf-java-3.25.5.jar:/opt/kafka/bin/../libs/reflections-0.10.2.jar:/opt/kafka/bin/../libs/reload4j-1.2.25.jar:/opt/kafka/bin/../libs/rocksdbjni-7.9.2.jar:/opt/kafka/bin/../libs/scala-collection-compat_2.13-2.10.0.jar:/opt/kafka/bin/../libs/scala-java8-compat_2.13-1.0.2.jar:/opt/kafka/bin/../libs/scala-library-2.13.14.jar:/opt/kafka/bin/../libs/scala-logging_2.13-3.9.5.jar:/opt/kafka/bin/../libs/scala-reflect-2.13.14.jar:/opt/kafka/bin/../libs/slf4j-api-1.7.36.jar:/opt/kafka/bin/../libs/slf4j-reload4j-1.7.36.jar:/opt/kafka/bin/../libs/snappy-java-1.1.10.5.jar:/opt/kafka/bin/../libs/swagger-annotations-2.2.8.jar:/opt/kafka/bin/../libs/trogdor-3.9.0.jar:/opt/kafka/bin/../libs/zookeeper-3.8.4.jar:/opt/kafka/bin/../libs/zookeeper-jute-3.8.4.jar:/opt/kafka/bin/../libs/zstd-jni-1.5.6-4.jar (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,077] INFO Client environment:java.library.path=/opt/java/openjdk/lib/server:/opt/java/openjdk/lib:/opt/java/openjdk/../lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,077] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,077] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,077] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,077] INFO Client environment:os.arch=aarch64 (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,077] INFO Client environment:os.version=6.12.54-linuxkit (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,077] INFO Client environment:user.name=appuser (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,077] INFO Client environment:user.home=/home/appuser (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,077] INFO Client environment:user.dir=/ (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,077] INFO Client environment:os.memory.free=981MB (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,077] INFO Client environment:os.memory.max=1024MB (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,077] INFO Client environment:os.memory.total=1024MB (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,078] INFO Initiating client connection, connectString=zookeeper:2181 sessionTimeout=18000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@7c51f34b (org.apache.zookeeper.ZooKeeper)
+kafka-4  | [2026-11-01 08:11:33,081] INFO jute.maxbuffer value is 4194304 Bytes (org.apache.zookeeper.ClientCnxnSocket)
+kafka-4  | [2026-11-01 08:11:33,086] INFO zookeeper.request.timeout value is 0. feature enabled=false (org.apache.zookeeper.ClientCnxn)
+kafka-4  | [2026-11-01 08:11:33,089] INFO Opening socket connection to server zookeeper/172.20.0.2:2181. (org.apache.zookeeper.ClientCnxn)
+kafka-4  | [2026-11-01 08:11:33,089] INFO [ZooKeeperClient Kafka server] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
+kafka-4  | [2026-11-01 08:11:33,091] INFO Socket connection established, initiating session, client: /172.20.0.6:60932, server: zookeeper/172.20.0.2:2181 (org.apache.zookeeper.ClientCnxn)
+kafka-4  | [2026-11-01 08:11:33,096] INFO Session establishment complete on server zookeeper/172.20.0.2:2181, session id = 0x1000041ad6b0003, negotiated timeout = 18000 (org.apache.zookeeper.ClientCnxn)
+kafka-4  | [2026-11-01 08:11:33,097] INFO [ZooKeeperClient Kafka server] Connected. (kafka.zookeeper.ZooKeeperClient)
+kafka-4  | [2026-11-01 08:11:33,218] INFO Cluster ID = Qoy_eFXZTiuP7zXL4Y6pMw (kafka.server.KafkaServer)
+kafka-4  | [2026-11-01 08:11:33,242] INFO KafkaConfig values: 
+kafka-4  | 	advertised.listeners = PLAINTEXT://kafka-4:9092
+kafka-4  | 	alter.config.policy.class.name = null
+kafka-4  | 	alter.log.dirs.replication.quota.window.num = 11
+kafka-4  | 	alter.log.dirs.replication.quota.window.size.seconds = 1
+kafka-4  | 	authorizer.class.name = 
+kafka-4  | 	auto.create.topics.enable = false
+kafka-4  | 	auto.include.jmx.reporter = true
+kafka-4  | 	auto.leader.rebalance.enable = true
+kafka-4  | 	background.threads = 10
+kafka-4  | 	broker.heartbeat.interval.ms = 2000
+kafka-4  | 	broker.id = 4
+kafka-4  | 	broker.id.generation.enable = true
+kafka-4  | 	broker.rack = null
+kafka-4  | 	broker.session.timeout.ms = 9000
+kafka-4  | 	client.quota.callback.class = null
+kafka-4  | 	compression.gzip.level = -1
+kafka-4  | 	compression.lz4.level = 9
+kafka-4  | 	compression.type = producer
+kafka-4  | 	compression.zstd.level = 3
+kafka-4  | 	connection.failed.authentication.delay.ms = 100
+kafka-4  | 	connections.max.idle.ms = 600000
+kafka-4  | 	connections.max.reauth.ms = 0
+kafka-4  | 	control.plane.listener.name = null
+kafka-4  | 	controlled.shutdown.enable = true
+kafka-4  | 	controlled.shutdown.max.retries = 3
+kafka-4  | 	controlled.shutdown.retry.backoff.ms = 5000
+kafka-4  | 	controller.listener.names = null
+kafka-4  | 	controller.quorum.append.linger.ms = 25
+kafka-4  | 	controller.quorum.bootstrap.servers = []
+kafka-4  | 	controller.quorum.election.backoff.max.ms = 1000
+kafka-4  | 	controller.quorum.election.timeout.ms = 1000
+kafka-4  | 	controller.quorum.fetch.timeout.ms = 2000
+kafka-4  | 	controller.quorum.request.timeout.ms = 2000
+kafka-4  | 	controller.quorum.retry.backoff.ms = 20
+kafka-4  | 	controller.quorum.voters = []
+kafka-4  | 	controller.quota.window.num = 11
+kafka-4  | 	controller.quota.window.size.seconds = 1
+kafka-4  | 	controller.socket.timeout.ms = 30000
+kafka-4  | 	create.topic.policy.class.name = null
+kafka-4  | 	default.replication.factor = 1
+kafka-4  | 	delegation.token.expiry.check.interval.ms = 3600000
+kafka-4  | 	delegation.token.expiry.time.ms = 86400000
+kafka-4  | 	delegation.token.master.key = null
+kafka-4  | 	delegation.token.max.lifetime.ms = 604800000
+kafka-4  | 	delegation.token.secret.key = null
+kafka-4  | 	delete.records.purgatory.purge.interval.requests = 1
+kafka-4  | 	delete.topic.enable = true
+kafka-4  | 	early.start.listeners = null
+kafka-4  | 	eligible.leader.replicas.enable = false
+kafka-4  | 	fetch.max.bytes = 57671680
+kafka-4  | 	fetch.purgatory.purge.interval.requests = 1000
+kafka-4  | 	group.consumer.assignors = [org.apache.kafka.coordinator.group.assignor.UniformAssignor, org.apache.kafka.coordinator.group.assignor.RangeAssignor]
+kafka-4  | 	group.consumer.heartbeat.interval.ms = 5000
+kafka-4  | 	group.consumer.max.heartbeat.interval.ms = 15000
+kafka-4  | 	group.consumer.max.session.timeout.ms = 60000
+kafka-4  | 	group.consumer.max.size = 2147483647
+kafka-4  | 	group.consumer.migration.policy = disabled
+kafka-4  | 	group.consumer.min.heartbeat.interval.ms = 5000
+kafka-4  | 	group.consumer.min.session.timeout.ms = 45000
+kafka-4  | 	group.consumer.session.timeout.ms = 45000
+kafka-4  | 	group.coordinator.append.linger.ms = 10
+kafka-4  | 	group.coordinator.new.enable = false
+kafka-4  | 	group.coordinator.rebalance.protocols = [classic]
+kafka-4  | 	group.coordinator.threads = 1
+kafka-4  | 	group.initial.rebalance.delay.ms = 0
+kafka-4  | 	group.max.session.timeout.ms = 1800000
+kafka-4  | 	group.max.size = 2147483647
+kafka-4  | 	group.min.session.timeout.ms = 6000
+kafka-4  | 	group.share.delivery.count.limit = 5
+kafka-4  | 	group.share.enable = false
+kafka-4  | 	group.share.heartbeat.interval.ms = 5000
+kafka-4  | 	group.share.max.groups = 10
+kafka-4  | 	group.share.max.heartbeat.interval.ms = 15000
+kafka-4  | 	group.share.max.record.lock.duration.ms = 60000
+kafka-4  | 	group.share.max.session.timeout.ms = 60000
+kafka-4  | 	group.share.max.size = 200
+kafka-4  | 	group.share.min.heartbeat.interval.ms = 5000
+kafka-4  | 	group.share.min.record.lock.duration.ms = 15000
+kafka-4  | 	group.share.min.session.timeout.ms = 45000
+kafka-4  | 	group.share.partition.max.record.locks = 200
+kafka-4  | 	group.share.record.lock.duration.ms = 30000
+kafka-4  | 	group.share.session.timeout.ms = 45000
+kafka-4  | 	initial.broker.registration.timeout.ms = 60000
+kafka-4  | 	inter.broker.listener.name = PLAINTEXT
+kafka-4  | 	inter.broker.protocol.version = 3.9-IV0
+kafka-4  | 	kafka.metrics.polling.interval.secs = 10
+kafka-4  | 	kafka.metrics.reporters = []
+kafka-4  | 	leader.imbalance.check.interval.seconds = 300
+kafka-4  | 	leader.imbalance.per.broker.percentage = 10
+kafka-4  | 	listener.security.protocol.map = PLAINTEXT:PLAINTEXT
+kafka-4  | 	listeners = PLAINTEXT://:9092
+kafka-4  | 	log.cleaner.backoff.ms = 15000
+kafka-4  | 	log.cleaner.dedupe.buffer.size = 134217728
+kafka-4  | 	log.cleaner.delete.retention.ms = 86400000
+kafka-4  | 	log.cleaner.enable = true
+kafka-4  | 	log.cleaner.io.buffer.load.factor = 0.9
+kafka-4  | 	log.cleaner.io.buffer.size = 524288
+kafka-4  | 	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+kafka-4  | 	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+kafka-4  | 	log.cleaner.min.cleanable.ratio = 0.5
+kafka-4  | 	log.cleaner.min.compaction.lag.ms = 0
+kafka-4  | 	log.cleaner.threads = 1
+kafka-4  | 	log.cleanup.policy = [delete]
+kafka-4  | 	log.dir = /tmp/kafka-logs
+kafka-4  | 	log.dir.failure.timeout.ms = 30000
+kafka-4  | 	log.dirs = /var/lib/kafka/data
+kafka-4  | 	log.flush.interval.messages = 9223372036854775807
+kafka-4  | 	log.flush.interval.ms = null
+kafka-4  | 	log.flush.offset.checkpoint.interval.ms = 60000
+kafka-4  | 	log.flush.scheduler.interval.ms = 9223372036854775807
+kafka-4  | 	log.flush.start.offset.checkpoint.interval.ms = 60000
+kafka-4  | 	log.index.interval.bytes = 4096
+kafka-4  | 	log.index.size.max.bytes = 10485760
+kafka-4  | 	log.initial.task.delay.ms = 30000
+kafka-4  | 	log.local.retention.bytes = -2
+kafka-4  | 	log.local.retention.ms = -2
+kafka-4  | 	log.message.downconversion.enable = true
+kafka-4  | 	log.message.format.version = 3.0-IV1
+kafka-4  | 	log.message.timestamp.after.max.ms = 9223372036854775807
+kafka-4  | 	log.message.timestamp.before.max.ms = 9223372036854775807
+kafka-4  | 	log.message.timestamp.difference.max.ms = 9223372036854775807
+kafka-4  | 	log.message.timestamp.type = CreateTime
+kafka-4  | 	log.preallocate = false
+kafka-4  | 	log.retention.bytes = -1
+kafka-4  | 	log.retention.check.interval.ms = 300000
+kafka-4  | 	log.retention.hours = 168
+kafka-4  | 	log.retention.minutes = null
+kafka-4  | 	log.retention.ms = null
+kafka-4  | 	log.roll.hours = 168
+kafka-4  | 	log.roll.jitter.hours = 0
+kafka-4  | 	log.roll.jitter.ms = null
+kafka-4  | 	log.roll.ms = null
+kafka-4  | 	log.segment.bytes = 1073741824
+kafka-4  | 	log.segment.delete.delay.ms = 60000
+kafka-4  | 	max.connection.creation.rate = 2147483647
+kafka-4  | 	max.connections = 2147483647
+kafka-4  | 	max.connections.per.ip = 2147483647
+kafka-4  | 	max.connections.per.ip.overrides = 
+kafka-4  | 	max.incremental.fetch.session.cache.slots = 1000
+kafka-4  | 	max.request.partition.size.limit = 2000
+kafka-4  | 	message.max.bytes = 1048588
+kafka-4  | 	metadata.log.dir = null
+kafka-4  | 	metadata.log.max.record.bytes.between.snapshots = 20971520
+kafka-4  | 	metadata.log.max.snapshot.interval.ms = 3600000
+kafka-4  | 	metadata.log.segment.bytes = 1073741824
+kafka-4  | 	metadata.log.segment.min.bytes = 8388608
+kafka-4  | 	metadata.log.segment.ms = 604800000
+kafka-4  | 	metadata.max.idle.interval.ms = 500
+kafka-4  | 	metadata.max.retention.bytes = 104857600
+kafka-4  | 	metadata.max.retention.ms = 604800000
+kafka-4  | 	metric.reporters = []
+kafka-4  | 	metrics.num.samples = 2
+kafka-4  | 	metrics.recording.level = INFO
+kafka-4  | 	metrics.sample.window.ms = 30000
+kafka-4  | 	min.insync.replicas = 1
+kafka-4  | 	node.id = 4
+kafka-4  | 	num.io.threads = 8
+kafka-4  | 	num.network.threads = 3
+kafka-4  | 	num.partitions = 1
+kafka-4  | 	num.recovery.threads.per.data.dir = 1
+kafka-4  | 	num.replica.alter.log.dirs.threads = null
+kafka-4  | 	num.replica.fetchers = 1
+kafka-4  | 	offset.metadata.max.bytes = 4096
+kafka-4  | 	offsets.commit.required.acks = -1
+kafka-4  | 	offsets.commit.timeout.ms = 5000
+kafka-4  | 	offsets.load.buffer.size = 5242880
+kafka-4  | 	offsets.retention.check.interval.ms = 600000
+kafka-4  | 	offsets.retention.minutes = 10080
+kafka-4  | 	offsets.topic.compression.codec = 0
+kafka-4  | 	offsets.topic.num.partitions = 50
+kafka-4  | 	offsets.topic.replication.factor = 3
+kafka-4  | 	offsets.topic.segment.bytes = 104857600
+kafka-4  | 	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+kafka-4  | 	password.encoder.iterations = 4096
+kafka-4  | 	password.encoder.key.length = 128
+kafka-4  | 	password.encoder.keyfactory.algorithm = null
+kafka-4  | 	password.encoder.old.secret = null
+kafka-4  | 	password.encoder.secret = null
+kafka-4  | 	principal.builder.class = class org.apache.kafka.common.security.authenticator.DefaultKafkaPrincipalBuilder
+kafka-4  | 	process.roles = []
+kafka-4  | 	producer.id.expiration.check.interval.ms = 600000
+kafka-4  | 	producer.id.expiration.ms = 86400000
+kafka-4  | 	producer.purgatory.purge.interval.requests = 1000
+kafka-4  | 	queued.max.request.bytes = -1
+kafka-4  | 	queued.max.requests = 500
+kafka-4  | 	quota.window.num = 11
+kafka-4  | 	quota.window.size.seconds = 1
+kafka-4  | 	remote.fetch.max.wait.ms = 500
+kafka-4  | 	remote.log.index.file.cache.total.size.bytes = 1073741824
+kafka-4  | 	remote.log.manager.copier.thread.pool.size = -1
+kafka-4  | 	remote.log.manager.copy.max.bytes.per.second = 9223372036854775807
+kafka-4  | 	remote.log.manager.copy.quota.window.num = 11
+kafka-4  | 	remote.log.manager.copy.quota.window.size.seconds = 1
+kafka-4  | 	remote.log.manager.expiration.thread.pool.size = -1
+kafka-4  | 	remote.log.manager.fetch.max.bytes.per.second = 9223372036854775807
+kafka-4  | 	remote.log.manager.fetch.quota.window.num = 11
+kafka-4  | 	remote.log.manager.fetch.quota.window.size.seconds = 1
+kafka-4  | 	remote.log.manager.task.interval.ms = 30000
+kafka-4  | 	remote.log.manager.task.retry.backoff.max.ms = 30000
+kafka-4  | 	remote.log.manager.task.retry.backoff.ms = 500
+kafka-4  | 	remote.log.manager.task.retry.jitter = 0.2
+kafka-4  | 	remote.log.manager.thread.pool.size = 10
+kafka-4  | 	remote.log.metadata.custom.metadata.max.bytes = 128
+kafka-4  | 	remote.log.metadata.manager.class.name = org.apache.kafka.server.log.remote.metadata.storage.TopicBasedRemoteLogMetadataManager
+kafka-4  | 	remote.log.metadata.manager.class.path = null
+kafka-4  | 	remote.log.metadata.manager.impl.prefix = rlmm.config.
+kafka-4  | 	remote.log.metadata.manager.listener.name = null
+kafka-4  | 	remote.log.reader.max.pending.tasks = 100
+kafka-4  | 	remote.log.reader.threads = 10
+kafka-4  | 	remote.log.storage.manager.class.name = null
+kafka-4  | 	remote.log.storage.manager.class.path = null
+kafka-4  | 	remote.log.storage.manager.impl.prefix = rsm.config.
+kafka-4  | 	remote.log.storage.system.enable = false
+kafka-4  | 	replica.fetch.backoff.ms = 1000
+kafka-4  | 	replica.fetch.max.bytes = 1048576
+kafka-4  | 	replica.fetch.min.bytes = 1
+kafka-4  | 	replica.fetch.response.max.bytes = 10485760
+kafka-4  | 	replica.fetch.wait.max.ms = 500
+kafka-4  | 	replica.high.watermark.checkpoint.interval.ms = 5000
+kafka-4  | 	replica.lag.time.max.ms = 30000
+kafka-4  | 	replica.selector.class = null
+kafka-4  | 	replica.socket.receive.buffer.bytes = 65536
+kafka-4  | 	replica.socket.timeout.ms = 30000
+kafka-4  | 	replication.quota.window.num = 11
+kafka-4  | 	replication.quota.window.size.seconds = 1
+kafka-4  | 	request.timeout.ms = 30000
+kafka-4  | 	reserved.broker.max.id = 1000
+kafka-4  | 	sasl.client.callback.handler.class = null
+kafka-4  | 	sasl.enabled.mechanisms = [GSSAPI]
+kafka-4  | 	sasl.jaas.config = null
+kafka-4  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+kafka-4  | 	sasl.kerberos.min.time.before.relogin = 60000
+kafka-4  | 	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+kafka-4  | 	sasl.kerberos.service.name = null
+kafka-4  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+kafka-4  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+kafka-4  | 	sasl.login.callback.handler.class = null
+kafka-4  | 	sasl.login.class = null
+kafka-4  | 	sasl.login.connect.timeout.ms = null
+kafka-4  | 	sasl.login.read.timeout.ms = null
+kafka-4  | 	sasl.login.refresh.buffer.seconds = 300
+kafka-4  | 	sasl.login.refresh.min.period.seconds = 60
+kafka-4  | 	sasl.login.refresh.window.factor = 0.8
+kafka-4  | 	sasl.login.refresh.window.jitter = 0.05
+kafka-4  | 	sasl.login.retry.backoff.max.ms = 10000
+kafka-4  | 	sasl.login.retry.backoff.ms = 100
+kafka-4  | 	sasl.mechanism.controller.protocol = GSSAPI
+kafka-4  | 	sasl.mechanism.inter.broker.protocol = GSSAPI
+kafka-4  | 	sasl.oauthbearer.clock.skew.seconds = 30
+kafka-4  | 	sasl.oauthbearer.expected.audience = null
+kafka-4  | 	sasl.oauthbearer.expected.issuer = null
+kafka-4  | 	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+kafka-4  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+kafka-4  | 	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+kafka-4  | 	sasl.oauthbearer.jwks.endpoint.url = null
+kafka-4  | 	sasl.oauthbearer.scope.claim.name = scope
+kafka-4  | 	sasl.oauthbearer.sub.claim.name = sub
+kafka-4  | 	sasl.oauthbearer.token.endpoint.url = null
+kafka-4  | 	sasl.server.callback.handler.class = null
+kafka-4  | 	sasl.server.max.receive.size = 524288
+kafka-4  | 	security.inter.broker.protocol = PLAINTEXT
+kafka-4  | 	security.providers = null
+kafka-4  | 	server.max.startup.time.ms = 9223372036854775807
+kafka-4  | 	socket.connection.setup.timeout.max.ms = 30000
+kafka-4  | 	socket.connection.setup.timeout.ms = 10000
+kafka-4  | 	socket.listen.backlog.size = 50
+kafka-4  | 	socket.receive.buffer.bytes = 102400
+kafka-4  | 	socket.request.max.bytes = 104857600
+kafka-4  | 	socket.send.buffer.bytes = 102400
+kafka-4  | 	ssl.allow.dn.changes = false
+kafka-4  | 	ssl.allow.san.changes = false
+kafka-4  | 	ssl.cipher.suites = []
+kafka-4  | 	ssl.client.auth = none
+kafka-4  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+kafka-4  | 	ssl.endpoint.identification.algorithm = https
+kafka-4  | 	ssl.engine.factory.class = null
+kafka-4  | 	ssl.key.password = null
+kafka-4  | 	ssl.keymanager.algorithm = SunX509
+kafka-4  | 	ssl.keystore.certificate.chain = null
+kafka-4  | 	ssl.keystore.key = null
+kafka-4  | 	ssl.keystore.location = null
+kafka-4  | 	ssl.keystore.password = null
+kafka-4  | 	ssl.keystore.type = JKS
+kafka-4  | 	ssl.principal.mapping.rules = DEFAULT
+kafka-4  | 	ssl.protocol = TLSv1.3
+kafka-4  | 	ssl.provider = null
+kafka-4  | 	ssl.secure.random.implementation = null
+kafka-4  | 	ssl.trustmanager.algorithm = PKIX
+kafka-4  | 	ssl.truststore.certificates = null
+kafka-4  | 	ssl.truststore.location = null
+kafka-4  | 	ssl.truststore.password = null
+kafka-4  | 	ssl.truststore.type = JKS
+kafka-4  | 	telemetry.max.bytes = 1048576
+kafka-4  | 	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+kafka-4  | 	transaction.max.timeout.ms = 900000
+kafka-4  | 	transaction.partition.verification.enable = true
+kafka-4  | 	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+kafka-4  | 	transaction.state.log.load.buffer.size = 5242880
+kafka-4  | 	transaction.state.log.min.isr = 2
+kafka-4  | 	transaction.state.log.num.partitions = 50
+kafka-4  | 	transaction.state.log.replication.factor = 3
+kafka-4  | 	transaction.state.log.segment.bytes = 104857600
+kafka-4  | 	transactional.id.expiration.ms = 604800000
+kafka-4  | 	unclean.leader.election.enable = false
+kafka-4  | 	unclean.leader.election.interval.ms = 300000
+kafka-4  | 	unstable.api.versions.enable = false
+kafka-4  | 	unstable.feature.versions.enable = false
+kafka-4  | 	zookeeper.clientCnxnSocket = null
+kafka-4  | 	zookeeper.connect = zookeeper:2181
+kafka-4  | 	zookeeper.connection.timeout.ms = null
+kafka-4  | 	zookeeper.max.in.flight.requests = 10
+kafka-4  | 	zookeeper.metadata.migration.enable = false
+kafka-4  | 	zookeeper.metadata.migration.min.batch.size = 200
+kafka-4  | 	zookeeper.session.timeout.ms = 18000
+kafka-4  | 	zookeeper.set.acl = false
+kafka-4  | 	zookeeper.ssl.cipher.suites = null
+kafka-4  | 	zookeeper.ssl.client.enable = false
+kafka-4  | 	zookeeper.ssl.crl.enable = false
+kafka-4  | 	zookeeper.ssl.enabled.protocols = null
+kafka-4  | 	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+kafka-4  | 	zookeeper.ssl.keystore.location = null
+kafka-4  | 	zookeeper.ssl.keystore.password = null
+kafka-4  | 	zookeeper.ssl.keystore.type = null
+kafka-4  | 	zookeeper.ssl.ocsp.enable = false
+kafka-4  | 	zookeeper.ssl.protocol = TLSv1.2
+kafka-4  | 	zookeeper.ssl.truststore.location = null
+kafka-4  | 	zookeeper.ssl.truststore.password = null
+kafka-4  | 	zookeeper.ssl.truststore.type = null
+kafka-4  |  (kafka.server.KafkaConfig)
+kafka-4  | [2026-11-01 08:11:33,268] INFO [ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-4  | [2026-11-01 08:11:33,268] INFO [ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-4  | [2026-11-01 08:11:33,268] INFO [ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-4  | [2026-11-01 08:11:33,269] INFO [ThrottledChannelReaper-ControllerMutation]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-4  | [2026-11-01 08:11:33,272] INFO [KafkaServer id=4] Rewriting /var/lib/kafka/data/meta.properties (kafka.server.KafkaServer)
+kafka-4  | [2026-11-01 08:11:33,328] INFO Loading logs from log dirs ArrayBuffer(/var/lib/kafka/data) (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:33,337] INFO No logs found to be loaded in /var/lib/kafka/data (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:33,360] INFO Loaded 0 logs in 31ms (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:33,361] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:33,362] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:33,377] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner$CleanerThread)
+kafka-4  | [2026-11-01 08:11:33,386] INFO [feature-zk-node-event-process-thread]: Starting (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+kafka-4  | [2026-11-01 08:11:33,393] INFO Feature ZK node at path: /feature does not exist (kafka.server.FinalizedFeatureChangeListener)
+kafka-4  | [2026-11-01 08:11:33,403] INFO [zk-broker-4-to-controller-forwarding-channel-manager]: Starting (kafka.server.NodeToControllerRequestThread)
+kafka-4  | [2026-11-01 08:11:33,630] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+kafka-4  | [2026-11-01 08:11:33,643] INFO [SocketServer listenerType=ZK_BROKER, nodeId=4] Created data-plane acceptor and processors for endpoint : ListenerName(PLAINTEXT) (kafka.network.SocketServer)
+kafka-4  | [2026-11-01 08:11:33,645] INFO [zk-broker-4-to-controller-alter-partition-channel-manager]: Starting (kafka.server.NodeToControllerRequestThread)
+kafka-4  | [2026-11-01 08:11:33,657] INFO [ExpirationReaper-4-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-4  | [2026-11-01 08:11:33,657] INFO [ExpirationReaper-4-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-4  | [2026-11-01 08:11:33,658] INFO [ExpirationReaper-4-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-4  | [2026-11-01 08:11:33,658] INFO [ExpirationReaper-4-ElectLeader]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-4  | [2026-11-01 08:11:33,660] INFO [ExpirationReaper-4-RemoteFetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-4  | [2026-11-01 08:11:33,668] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+kafka-4  | [2026-11-01 08:11:33,669] INFO [AddPartitionsToTxnSenderThread-4]: Starting (kafka.server.AddPartitionsToTxnManager)
+kafka-4  | [2026-11-01 08:11:33,669] INFO Feature ZK node created at path: /feature (kafka.server.FinalizedFeatureChangeListener)
+kafka-4  | [2026-11-01 08:11:33,688] INFO [MetadataCache brokerId=4] Updated cache from existing None to latest Features(metadataVersion=3.9-IV0, finalizedFeatures={}, finalizedFeaturesEpoch=0). (kafka.server.metadata.ZkMetadataCache)
+kafka-4  | [2026-11-01 08:11:33,704] INFO Creating /brokers/ids/4 (is it secure? false) (kafka.zk.KafkaZkClient)
+kafka-4  | [2026-11-01 08:11:33,718] INFO Stat of the created znode at /brokers/ids/4 is: 113,113,1793520693713,1793520693713,1,0,0,72057876120272899,198,0,113
+kafka-4  |  (kafka.zk.KafkaZkClient)
+kafka-4  | [2026-11-01 08:11:33,719] INFO Registered broker 4 at path /brokers/ids/4 with addresses: PLAINTEXT://kafka-4:9092, czxid (broker epoch): 113 (kafka.zk.KafkaZkClient)
+kafka-4  | [2026-11-01 08:11:33,757] INFO [ExpirationReaper-4-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-4  | [2026-11-01 08:11:33,762] INFO [ExpirationReaper-4-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-4  | [2026-11-01 08:11:33,763] INFO [ExpirationReaper-4-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-4  | [2026-11-01 08:11:33,769] INFO [GroupCoordinator 4]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:33,774] INFO [GroupCoordinator 4]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:33,798] INFO [TransactionCoordinator id=4] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+kafka-4  | [2026-11-01 08:11:33,802] INFO [TxnMarkerSenderThread-4]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+kafka-4  | [2026-11-01 08:11:33,802] INFO [TransactionCoordinator id=4] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+kafka-4  | [2026-11-01 08:11:33,824] INFO [ExpirationReaper-4-AlterAcls]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-4  | [2026-11-01 08:11:33,838] INFO [/config/changes-event-process-thread]: Starting (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+kafka-4  | [2026-11-01 08:11:33,848] INFO [SocketServer listenerType=ZK_BROKER, nodeId=4] Enabling request processing. (kafka.network.SocketServer)
+kafka-4  | [2026-11-01 08:11:33,852] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.DataPlaneAcceptor)
+kafka-4  | [2026-11-01 08:11:33,853] INFO [KafkaServer id=4] Start processing authorizer futures (kafka.server.KafkaServer)
+kafka-4  | [2026-11-01 08:11:33,853] INFO [KafkaServer id=4] End processing authorizer futures (kafka.server.KafkaServer)
+kafka-4  | [2026-11-01 08:11:33,853] INFO [KafkaServer id=4] Start processing enable request processing future (kafka.server.KafkaServer)
+kafka-4  | [2026-11-01 08:11:33,853] INFO [KafkaServer id=4] End processing enable request processing future (kafka.server.KafkaServer)
+kafka-4  | [2026-11-01 08:11:33,855] INFO Kafka version: 3.9.0 (org.apache.kafka.common.utils.AppInfoParser)
+kafka-4  | [2026-11-01 08:11:33,855] INFO Kafka commitId: a60e31147e6b01ee (org.apache.kafka.common.utils.AppInfoParser)
+kafka-4  | [2026-11-01 08:11:33,855] INFO Kafka startTimeMs: 1793520693853 (org.apache.kafka.common.utils.AppInfoParser)
+kafka-4  | [2026-11-01 08:11:33,856] INFO [KafkaServer id=4] started (kafka.server.KafkaServer)
+kafka-4  | [2026-11-01 08:11:33,949] INFO [zk-broker-4-to-controller-alter-partition-channel-manager]: Recorded new ZK controller, from now on will use node kafka-2:9092 (id: 2 rack: null) (kafka.server.NodeToControllerRequestThread)
+kafka-4  | [2026-11-01 08:11:34,016] INFO [zk-broker-4-to-controller-forwarding-channel-manager]: Recorded new ZK controller, from now on will use node kafka-2:9092 (id: 2 rack: null) (kafka.server.NodeToControllerRequestThread)
+kafka-4  | [2026-11-01 08:11:35,689] INFO [LogLoader partition=downtime-experiment-0, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:35,695] INFO Created log for partition downtime-experiment-0 in /var/lib/kafka/data/downtime-experiment-0 with properties {min.insync.replicas=2, unclean.leader.election.enable=false} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:35,696] INFO [Partition downtime-experiment-0 broker=4] No checkpointed highwatermark is found for partition downtime-experiment-0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:35,697] INFO [Partition downtime-experiment-0 broker=4] Log loaded for partition downtime-experiment-0 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:35,698] INFO [ReplicaFetcherManager on broker 4] Removed fetcher for partitions HashSet(downtime-experiment-0) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:11:35,707] INFO [ReplicaFetcherThread-0-1]: Starting (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:35,708] INFO [ReplicaFetcherManager on broker 4] Added fetcher to broker 1 for partitions Map(downtime-experiment-0 -> InitialFetchState(Some(A5bSDiDHQjaYuDP2n-2LVQ),BrokerEndPoint(id=1, host=kafka-1:9092),0,0)) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:11:35,710] INFO [ReplicaFetcher replicaId=4, leaderId=1, fetcherId=0] Truncating partition downtime-experiment-0 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:35,714] INFO [UnifiedLog partition=downtime-experiment-0, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:43,743] INFO [ReplicaFetcherManager on broker 4] Removed fetcher for partitions HashSet(__consumer_offsets-22, __consumer_offsets-4, __consumer_offsets-46, __consumer_offsets-34, __consumer_offsets-16, __consumer_offsets-28, __consumer_offsets-10, __consumer_offsets-40) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:11:43,749] INFO [LogLoader partition=__consumer_offsets-34, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,750] INFO Created log for partition __consumer_offsets-34 in /var/lib/kafka/data/__consumer_offsets-34 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,751] INFO [Partition __consumer_offsets-34 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-34 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,751] INFO [Partition __consumer_offsets-34 broker=4] Log loaded for partition __consumer_offsets-34 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,766] INFO [LogLoader partition=__consumer_offsets-4, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,767] INFO Created log for partition __consumer_offsets-4 in /var/lib/kafka/data/__consumer_offsets-4 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,767] INFO [Partition __consumer_offsets-4 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-4 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,767] INFO [Partition __consumer_offsets-4 broker=4] Log loaded for partition __consumer_offsets-4 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,773] INFO [LogLoader partition=__consumer_offsets-22, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,774] INFO Created log for partition __consumer_offsets-22 in /var/lib/kafka/data/__consumer_offsets-22 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,774] INFO [Partition __consumer_offsets-22 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-22 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,774] INFO [Partition __consumer_offsets-22 broker=4] Log loaded for partition __consumer_offsets-22 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,783] INFO [LogLoader partition=__consumer_offsets-40, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,784] INFO Created log for partition __consumer_offsets-40 in /var/lib/kafka/data/__consumer_offsets-40 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,784] INFO [Partition __consumer_offsets-40 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-40 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,784] INFO [Partition __consumer_offsets-40 broker=4] Log loaded for partition __consumer_offsets-40 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,790] INFO [LogLoader partition=__consumer_offsets-10, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,791] INFO Created log for partition __consumer_offsets-10 in /var/lib/kafka/data/__consumer_offsets-10 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,791] INFO [Partition __consumer_offsets-10 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-10 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,791] INFO [Partition __consumer_offsets-10 broker=4] Log loaded for partition __consumer_offsets-10 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,797] INFO [LogLoader partition=__consumer_offsets-28, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,798] INFO Created log for partition __consumer_offsets-28 in /var/lib/kafka/data/__consumer_offsets-28 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,799] INFO [Partition __consumer_offsets-28 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-28 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,799] INFO [Partition __consumer_offsets-28 broker=4] Log loaded for partition __consumer_offsets-28 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,809] INFO [LogLoader partition=__consumer_offsets-46, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,809] INFO Created log for partition __consumer_offsets-46 in /var/lib/kafka/data/__consumer_offsets-46 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,809] INFO [Partition __consumer_offsets-46 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-46 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,809] INFO [Partition __consumer_offsets-46 broker=4] Log loaded for partition __consumer_offsets-46 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,815] INFO [LogLoader partition=__consumer_offsets-16, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,815] INFO Created log for partition __consumer_offsets-16 in /var/lib/kafka/data/__consumer_offsets-16 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,815] INFO [Partition __consumer_offsets-16 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-16 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,815] INFO [Partition __consumer_offsets-16 broker=4] Log loaded for partition __consumer_offsets-16 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,821] INFO [LogLoader partition=__consumer_offsets-3, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,822] INFO Created log for partition __consumer_offsets-3 in /var/lib/kafka/data/__consumer_offsets-3 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,822] INFO [Partition __consumer_offsets-3 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-3 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,822] INFO [Partition __consumer_offsets-3 broker=4] Log loaded for partition __consumer_offsets-3 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,825] INFO [LogLoader partition=__consumer_offsets-35, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,826] INFO Created log for partition __consumer_offsets-35 in /var/lib/kafka/data/__consumer_offsets-35 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,826] INFO [Partition __consumer_offsets-35 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-35 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,826] INFO [Partition __consumer_offsets-35 broker=4] Log loaded for partition __consumer_offsets-35 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,829] INFO [LogLoader partition=__consumer_offsets-18, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,830] INFO Created log for partition __consumer_offsets-18 in /var/lib/kafka/data/__consumer_offsets-18 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,830] INFO [Partition __consumer_offsets-18 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-18 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,830] INFO [Partition __consumer_offsets-18 broker=4] Log loaded for partition __consumer_offsets-18 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,836] INFO [LogLoader partition=__consumer_offsets-5, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,837] INFO Created log for partition __consumer_offsets-5 in /var/lib/kafka/data/__consumer_offsets-5 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,839] INFO [Partition __consumer_offsets-5 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-5 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,839] INFO [Partition __consumer_offsets-5 broker=4] Log loaded for partition __consumer_offsets-5 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,842] INFO [LogLoader partition=__consumer_offsets-39, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,843] INFO Created log for partition __consumer_offsets-39 in /var/lib/kafka/data/__consumer_offsets-39 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,843] INFO [Partition __consumer_offsets-39 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-39 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,843] INFO [Partition __consumer_offsets-39 broker=4] Log loaded for partition __consumer_offsets-39 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,849] INFO [LogLoader partition=__consumer_offsets-9, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,849] INFO Created log for partition __consumer_offsets-9 in /var/lib/kafka/data/__consumer_offsets-9 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,849] INFO [Partition __consumer_offsets-9 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-9 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,849] INFO [Partition __consumer_offsets-9 broker=4] Log loaded for partition __consumer_offsets-9 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,853] INFO [LogLoader partition=__consumer_offsets-24, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,853] INFO Created log for partition __consumer_offsets-24 in /var/lib/kafka/data/__consumer_offsets-24 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,853] INFO [Partition __consumer_offsets-24 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-24 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,853] INFO [Partition __consumer_offsets-24 broker=4] Log loaded for partition __consumer_offsets-24 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,860] INFO [LogLoader partition=__consumer_offsets-29, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,862] INFO Created log for partition __consumer_offsets-29 in /var/lib/kafka/data/__consumer_offsets-29 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,862] INFO [Partition __consumer_offsets-29 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-29 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,862] INFO [Partition __consumer_offsets-29 broker=4] Log loaded for partition __consumer_offsets-29 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,867] INFO [LogLoader partition=__consumer_offsets-44, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,868] INFO Created log for partition __consumer_offsets-44 in /var/lib/kafka/data/__consumer_offsets-44 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,868] INFO [Partition __consumer_offsets-44 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-44 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,868] INFO [Partition __consumer_offsets-44 broker=4] Log loaded for partition __consumer_offsets-44 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,873] INFO [LogLoader partition=__consumer_offsets-14, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,873] INFO Created log for partition __consumer_offsets-14 in /var/lib/kafka/data/__consumer_offsets-14 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,876] INFO [Partition __consumer_offsets-14 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-14 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,876] INFO [Partition __consumer_offsets-14 broker=4] Log loaded for partition __consumer_offsets-14 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,880] INFO [LogLoader partition=__consumer_offsets-33, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,881] INFO Created log for partition __consumer_offsets-33 in /var/lib/kafka/data/__consumer_offsets-33 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,881] INFO [Partition __consumer_offsets-33 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-33 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,881] INFO [Partition __consumer_offsets-33 broker=4] Log loaded for partition __consumer_offsets-33 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,884] INFO [LogLoader partition=__consumer_offsets-48, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,885] INFO Created log for partition __consumer_offsets-48 in /var/lib/kafka/data/__consumer_offsets-48 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,885] INFO [Partition __consumer_offsets-48 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-48 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,885] INFO [Partition __consumer_offsets-48 broker=4] Log loaded for partition __consumer_offsets-48 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,888] INFO [LogLoader partition=__consumer_offsets-19, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,889] INFO Created log for partition __consumer_offsets-19 in /var/lib/kafka/data/__consumer_offsets-19 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,889] INFO [Partition __consumer_offsets-19 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-19 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,889] INFO [Partition __consumer_offsets-19 broker=4] Log loaded for partition __consumer_offsets-19 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,892] INFO [LogLoader partition=__consumer_offsets-38, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,892] INFO Created log for partition __consumer_offsets-38 in /var/lib/kafka/data/__consumer_offsets-38 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,892] INFO [Partition __consumer_offsets-38 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-38 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,893] INFO [Partition __consumer_offsets-38 broker=4] Log loaded for partition __consumer_offsets-38 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,900] INFO [LogLoader partition=__consumer_offsets-8, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,903] INFO Created log for partition __consumer_offsets-8 in /var/lib/kafka/data/__consumer_offsets-8 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,905] INFO [Partition __consumer_offsets-8 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-8 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,905] INFO [Partition __consumer_offsets-8 broker=4] Log loaded for partition __consumer_offsets-8 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,908] INFO [LogLoader partition=__consumer_offsets-43, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,908] INFO Created log for partition __consumer_offsets-43 in /var/lib/kafka/data/__consumer_offsets-43 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,908] INFO [Partition __consumer_offsets-43 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-43 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,908] INFO [Partition __consumer_offsets-43 broker=4] Log loaded for partition __consumer_offsets-43 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,911] INFO [LogLoader partition=__consumer_offsets-13, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,911] INFO Created log for partition __consumer_offsets-13 in /var/lib/kafka/data/__consumer_offsets-13 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,911] INFO [Partition __consumer_offsets-13 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-13 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,911] INFO [Partition __consumer_offsets-13 broker=4] Log loaded for partition __consumer_offsets-13 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,913] INFO [LogLoader partition=__consumer_offsets-49, dir=/var/lib/kafka/data] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+kafka-4  | [2026-11-01 08:11:43,914] INFO Created log for partition __consumer_offsets-49 in /var/lib/kafka/data/__consumer_offsets-49 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+kafka-4  | [2026-11-01 08:11:43,914] INFO [Partition __consumer_offsets-49 broker=4] No checkpointed highwatermark is found for partition __consumer_offsets-49 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,914] INFO [Partition __consumer_offsets-49 broker=4] Log loaded for partition __consumer_offsets-49 with initial high watermark 0 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:11:43,914] INFO [ReplicaFetcherManager on broker 4] Removed fetcher for partitions HashSet(__consumer_offsets-48, __consumer_offsets-13, __consumer_offsets-14, __consumer_offsets-43, __consumer_offsets-44, __consumer_offsets-9, __consumer_offsets-24, __consumer_offsets-19, __consumer_offsets-49, __consumer_offsets-18, __consumer_offsets-29, __consumer_offsets-39, __consumer_offsets-8, __consumer_offsets-5, __consumer_offsets-38, __consumer_offsets-35, __consumer_offsets-3, __consumer_offsets-33) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:11:43,915] INFO [ReplicaFetcherManager on broker 4] Added fetcher to broker 1 for partitions HashMap(__consumer_offsets-9 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=1, host=kafka-1:9092),0,0), __consumer_offsets-33 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=1, host=kafka-1:9092),0,0), __consumer_offsets-3 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=1, host=kafka-1:9092),0,0), __consumer_offsets-39 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=1, host=kafka-1:9092),0,0)) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:11:43,916] INFO [ReplicaFetcherThread-0-3]: Starting (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,916] INFO [ReplicaFetcherManager on broker 4] Added fetcher to broker 3 for partitions HashMap(__consumer_offsets-49 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=3, host=kafka-3:9092),0,0), __consumer_offsets-19 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=3, host=kafka-3:9092),0,0), __consumer_offsets-13 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=3, host=kafka-3:9092),0,0), __consumer_offsets-43 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=3, host=kafka-3:9092),0,0)) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:11:43,916] INFO [ReplicaFetcher replicaId=4, leaderId=3, fetcherId=0] Truncating partition __consumer_offsets-13 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,916] INFO [UnifiedLog partition=__consumer_offsets-13, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:43,916] INFO [ReplicaFetcher replicaId=4, leaderId=3, fetcherId=0] Truncating partition __consumer_offsets-43 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,916] INFO [UnifiedLog partition=__consumer_offsets-43, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:43,917] INFO [ReplicaFetcher replicaId=4, leaderId=3, fetcherId=0] Truncating partition __consumer_offsets-19 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,917] INFO [UnifiedLog partition=__consumer_offsets-19, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:43,917] INFO [ReplicaFetcher replicaId=4, leaderId=3, fetcherId=0] Truncating partition __consumer_offsets-49 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,917] INFO [UnifiedLog partition=__consumer_offsets-49, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:43,917] INFO [ReplicaFetcherManager on broker 4] Added fetcher to broker 2 for partitions HashMap(__consumer_offsets-18 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=2, host=kafka-2:9092),0,0), __consumer_offsets-24 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=2, host=kafka-2:9092),0,0), __consumer_offsets-48 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=2, host=kafka-2:9092),0,0)) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:11:43,918] INFO [ReplicaFetcherThread-0-2]: Starting (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,918] INFO [ReplicaFetcher replicaId=4, leaderId=2, fetcherId=0] Truncating partition __consumer_offsets-48 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,918] INFO [UnifiedLog partition=__consumer_offsets-48, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:43,918] INFO [ReplicaFetcher replicaId=4, leaderId=2, fetcherId=0] Truncating partition __consumer_offsets-24 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,918] INFO [UnifiedLog partition=__consumer_offsets-24, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:43,918] INFO [ReplicaFetcher replicaId=4, leaderId=2, fetcherId=0] Truncating partition __consumer_offsets-18 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,918] INFO [UnifiedLog partition=__consumer_offsets-18, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:43,919] INFO [ReplicaFetcherThread-0-5]: Starting (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,919] INFO [ReplicaFetcherManager on broker 4] Added fetcher to broker 5 for partitions HashMap(__consumer_offsets-8 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=5, host=kafka-5:9092),0,0), __consumer_offsets-38 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=5, host=kafka-5:9092),0,0), __consumer_offsets-14 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=5, host=kafka-5:9092),0,0), __consumer_offsets-44 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=5, host=kafka-5:9092),0,0)) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:11:43,919] INFO [ReplicaFetcher replicaId=4, leaderId=5, fetcherId=0] Truncating partition __consumer_offsets-14 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,919] INFO [UnifiedLog partition=__consumer_offsets-14, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:43,919] INFO [ReplicaFetcher replicaId=4, leaderId=5, fetcherId=0] Truncating partition __consumer_offsets-44 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,919] INFO [UnifiedLog partition=__consumer_offsets-44, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:43,919] INFO [ReplicaFetcher replicaId=4, leaderId=5, fetcherId=0] Truncating partition __consumer_offsets-8 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,919] INFO [UnifiedLog partition=__consumer_offsets-8, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:43,919] INFO [ReplicaFetcher replicaId=4, leaderId=5, fetcherId=0] Truncating partition __consumer_offsets-38 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,919] INFO [UnifiedLog partition=__consumer_offsets-38, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:43,919] INFO [ReplicaFetcherManager on broker 4] Added fetcher to broker 6 for partitions HashMap(__consumer_offsets-35 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=6, host=kafka-6:9092),0,0), __consumer_offsets-5 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=6, host=kafka-6:9092),0,0), __consumer_offsets-29 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=6, host=kafka-6:9092),0,0)) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:11:43,920] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 34 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,920] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-34 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,920] INFO [ReplicaFetcherThread-0-6]: Starting (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,922] INFO [ReplicaFetcher replicaId=4, leaderId=6, fetcherId=0] Truncating partition __consumer_offsets-29 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,922] INFO [UnifiedLog partition=__consumer_offsets-29, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:43,923] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 4 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,923] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-4 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,923] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 22 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,923] INFO [ReplicaFetcher replicaId=4, leaderId=6, fetcherId=0] Truncating partition __consumer_offsets-5 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,924] INFO [UnifiedLog partition=__consumer_offsets-5, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:43,925] INFO [ReplicaFetcher replicaId=4, leaderId=6, fetcherId=0] Truncating partition __consumer_offsets-35 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,925] INFO [UnifiedLog partition=__consumer_offsets-35, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:43,924] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-22 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,925] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 40 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,925] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-40 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,925] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 10 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,925] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-10 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,925] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 28 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,925] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-28 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,925] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 46 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,925] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-46 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,925] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 16 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,925] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-16 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,925] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 3 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,926] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-3 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,926] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 35 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,926] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-35 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,926] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 18 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,926] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-18 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,926] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 5 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,926] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-5 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,926] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 39 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,926] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-39 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,926] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 9 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,926] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-9 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,926] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 24 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,926] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-24 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 29 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-29 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 44 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-44 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 14 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-14 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 33 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-33 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 48 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-48 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 19 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-19 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 38 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-38 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 8 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-8 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 43 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-43 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 13 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-13 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 49 in epoch OptionalInt[0] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:11:43,927] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-49 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,930] WARN [ReplicaFetcher replicaId=4, leaderId=5, fetcherId=0] Received UNKNOWN_TOPIC_ID from the leader for partition __consumer_offsets-14. This error may be returned transiently when the partition is being created or deleted, but it is not expected to persist. (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,930] WARN [ReplicaFetcher replicaId=4, leaderId=5, fetcherId=0] Received UNKNOWN_TOPIC_ID from the leader for partition __consumer_offsets-44. This error may be returned transiently when the partition is being created or deleted, but it is not expected to persist. (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,930] WARN [ReplicaFetcher replicaId=4, leaderId=5, fetcherId=0] Received UNKNOWN_TOPIC_ID from the leader for partition __consumer_offsets-8. This error may be returned transiently when the partition is being created or deleted, but it is not expected to persist. (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,930] WARN [ReplicaFetcher replicaId=4, leaderId=5, fetcherId=0] Received UNKNOWN_TOPIC_ID from the leader for partition __consumer_offsets-38. This error may be returned transiently when the partition is being created or deleted, but it is not expected to persist. (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,934] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-34 in 9 milliseconds for epoch 0, of which 4 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,935] WARN [ReplicaFetcher replicaId=4, leaderId=6, fetcherId=0] Received UNKNOWN_TOPIC_ID from the leader for partition __consumer_offsets-29. This error may be returned transiently when the partition is being created or deleted, but it is not expected to persist. (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,937] WARN [ReplicaFetcher replicaId=4, leaderId=6, fetcherId=0] Received UNKNOWN_TOPIC_ID from the leader for partition __consumer_offsets-5. This error may be returned transiently when the partition is being created or deleted, but it is not expected to persist. (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,937] WARN [ReplicaFetcher replicaId=4, leaderId=6, fetcherId=0] Received UNKNOWN_TOPIC_ID from the leader for partition __consumer_offsets-35. This error may be returned transiently when the partition is being created or deleted, but it is not expected to persist. (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:43,937] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-4 in 14 milliseconds for epoch 0, of which 14 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,937] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-22 in 12 milliseconds for epoch 0, of which 12 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,937] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-40 in 12 milliseconds for epoch 0, of which 12 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,937] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-10 in 12 milliseconds for epoch 0, of which 12 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,937] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-28 in 12 milliseconds for epoch 0, of which 12 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,937] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-46 in 12 milliseconds for epoch 0, of which 12 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,937] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-16 in 12 milliseconds for epoch 0, of which 12 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,939] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-3 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,939] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-35 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,939] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-18 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,939] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-5 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,939] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-39 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,939] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-9 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,939] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-24 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,939] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-29 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,939] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-44 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,939] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-14 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,939] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-33 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,939] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-48 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,939] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-19 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,939] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-38 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,939] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-8 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,940] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-43 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,940] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-13 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:43,940] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-49 for coordinator epoch OptionalInt[0]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:11:44,217] INFO [ReplicaFetcher replicaId=4, leaderId=1, fetcherId=0] Truncating partition __consumer_offsets-9 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:44,217] INFO [UnifiedLog partition=__consumer_offsets-9, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:44,217] INFO [ReplicaFetcher replicaId=4, leaderId=1, fetcherId=0] Truncating partition __consumer_offsets-39 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:44,217] INFO [UnifiedLog partition=__consumer_offsets-39, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:44,217] INFO [ReplicaFetcher replicaId=4, leaderId=1, fetcherId=0] Truncating partition __consumer_offsets-3 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:44,217] INFO [UnifiedLog partition=__consumer_offsets-3, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:44,217] INFO [ReplicaFetcher replicaId=4, leaderId=1, fetcherId=0] Truncating partition __consumer_offsets-33 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:11:44,217] INFO [UnifiedLog partition=__consumer_offsets-33, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:11:59,877] INFO [ReplicaFetcher replicaId=4, leaderId=3, fetcherId=0] Node 3 disconnected. (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:11:59,877] INFO [ReplicaFetcher replicaId=4, leaderId=1, fetcherId=0] Node 1 disconnected. (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:11:59,878] INFO [ReplicaFetcher replicaId=4, leaderId=2, fetcherId=0] Node 2 disconnected. (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:11:59,880] INFO [ReplicaFetcher replicaId=4, leaderId=3, fetcherId=0] Cancelled in-flight FETCH request with correlation id 31 due to node 3 being disconnected (elapsed time since creation: 248ms, elapsed time since send: 248ms, throttle time: 0ms, request timeout: 30000ms) (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:11:59,880] INFO [ReplicaFetcher replicaId=4, leaderId=3, fetcherId=0] Client requested connection close from node 3 (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:11:59,881] INFO [ReplicaFetcher replicaId=4, leaderId=3, fetcherId=0] Error sending fetch request (sessionId=721468969, epoch=31) to node 3: (org.apache.kafka.clients.FetchSessionHandler)
+kafka-4  | java.io.IOException: Connection to 3 was disconnected before the response was read
+kafka-4  | 	at org.apache.kafka.clients.NetworkClientUtils.sendAndReceive(NetworkClientUtils.java:100)
+kafka-4  | 	at kafka.server.BrokerBlockingSender.sendRequest(BrokerBlockingSender.scala:114)
+kafka-4  | 	at kafka.server.RemoteLeaderEndPoint.fetch(RemoteLeaderEndPoint.scala:79)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.processFetchRequest(AbstractFetcherThread.scala:317)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3(AbstractFetcherThread.scala:131)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3$adapted(AbstractFetcherThread.scala:130)
+kafka-4  | 	at scala.Option.foreach(Option.scala:437)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.maybeFetch(AbstractFetcherThread.scala:130)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.doWork(AbstractFetcherThread.scala:113)
+kafka-4  | 	at kafka.server.ReplicaFetcherThread.doWork(ReplicaFetcherThread.scala:98)
+kafka-4  | 	at org.apache.kafka.server.util.ShutdownableThread.run(ShutdownableThread.java:136)
+kafka-4  | [2026-11-01 08:11:59,881] INFO [ReplicaFetcher replicaId=4, leaderId=2, fetcherId=0] Cancelled in-flight FETCH request with correlation id 31 due to node 2 being disconnected (elapsed time since creation: 249ms, elapsed time since send: 249ms, throttle time: 0ms, request timeout: 30000ms) (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:11:59,881] INFO [ReplicaFetcher replicaId=4, leaderId=1, fetcherId=0] Cancelled in-flight FETCH request with correlation id 48 due to node 1 being disconnected (elapsed time since creation: 298ms, elapsed time since send: 298ms, throttle time: 0ms, request timeout: 30000ms) (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:11:59,881] INFO [ReplicaFetcher replicaId=4, leaderId=2, fetcherId=0] Client requested connection close from node 2 (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:11:59,881] INFO [ReplicaFetcher replicaId=4, leaderId=1, fetcherId=0] Client requested connection close from node 1 (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:11:59,881] INFO [ReplicaFetcher replicaId=4, leaderId=2, fetcherId=0] Error sending fetch request (sessionId=758470896, epoch=31) to node 2: (org.apache.kafka.clients.FetchSessionHandler)
+kafka-4  | java.io.IOException: Connection to 2 was disconnected before the response was read
+kafka-4  | 	at org.apache.kafka.clients.NetworkClientUtils.sendAndReceive(NetworkClientUtils.java:100)
+kafka-4  | 	at kafka.server.BrokerBlockingSender.sendRequest(BrokerBlockingSender.scala:114)
+kafka-4  | 	at kafka.server.RemoteLeaderEndPoint.fetch(RemoteLeaderEndPoint.scala:79)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.processFetchRequest(AbstractFetcherThread.scala:317)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3(AbstractFetcherThread.scala:131)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3$adapted(AbstractFetcherThread.scala:130)
+kafka-4  | 	at scala.Option.foreach(Option.scala:437)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.maybeFetch(AbstractFetcherThread.scala:130)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.doWork(AbstractFetcherThread.scala:113)
+kafka-4  | 	at kafka.server.ReplicaFetcherThread.doWork(ReplicaFetcherThread.scala:98)
+kafka-4  | 	at org.apache.kafka.server.util.ShutdownableThread.run(ShutdownableThread.java:136)
+kafka-4  | [2026-11-01 08:11:59,882] INFO [ReplicaFetcher replicaId=4, leaderId=1, fetcherId=0] Error sending fetch request (sessionId=695430589, epoch=48) to node 1: (org.apache.kafka.clients.FetchSessionHandler)
+kafka-4  | java.io.IOException: Connection to 1 was disconnected before the response was read
+kafka-4  | 	at org.apache.kafka.clients.NetworkClientUtils.sendAndReceive(NetworkClientUtils.java:100)
+kafka-4  | 	at kafka.server.BrokerBlockingSender.sendRequest(BrokerBlockingSender.scala:114)
+kafka-4  | 	at kafka.server.RemoteLeaderEndPoint.fetch(RemoteLeaderEndPoint.scala:79)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.processFetchRequest(AbstractFetcherThread.scala:317)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3(AbstractFetcherThread.scala:131)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3$adapted(AbstractFetcherThread.scala:130)
+kafka-4  | 	at scala.Option.foreach(Option.scala:437)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.maybeFetch(AbstractFetcherThread.scala:130)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.doWork(AbstractFetcherThread.scala:113)
+kafka-4  | 	at kafka.server.ReplicaFetcherThread.doWork(ReplicaFetcherThread.scala:98)
+kafka-4  | 	at org.apache.kafka.server.util.ShutdownableThread.run(ShutdownableThread.java:136)
+kafka-4  | [2026-11-01 08:11:59,882] WARN [ReplicaFetcher replicaId=4, leaderId=1, fetcherId=0] Error in response for fetch request (type=FetchRequest, replicaId=4, maxWait=500, minBytes=1, maxBytes=10485760, fetchData={downtime-experiment-0=PartitionData(topicId=A5bSDiDHQjaYuDP2n-2LVQ, fetchOffset=17, logStartOffset=0, maxBytes=1048576, currentLeaderEpoch=Optional[0], lastFetchedEpoch=Optional[0])}, isolationLevel=read_uncommitted, removed=, replaced=, metadata=(sessionId=695430589, epoch=48), rackId=) (kafka.server.ReplicaFetcherThread)
+kafka-4  | java.io.IOException: Connection to 1 was disconnected before the response was read
+kafka-4  | 	at org.apache.kafka.clients.NetworkClientUtils.sendAndReceive(NetworkClientUtils.java:100)
+kafka-4  | 	at kafka.server.BrokerBlockingSender.sendRequest(BrokerBlockingSender.scala:114)
+kafka-4  | 	at kafka.server.RemoteLeaderEndPoint.fetch(RemoteLeaderEndPoint.scala:79)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.processFetchRequest(AbstractFetcherThread.scala:317)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3(AbstractFetcherThread.scala:131)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3$adapted(AbstractFetcherThread.scala:130)
+kafka-4  | 	at scala.Option.foreach(Option.scala:437)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.maybeFetch(AbstractFetcherThread.scala:130)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.doWork(AbstractFetcherThread.scala:113)
+kafka-4  | 	at kafka.server.ReplicaFetcherThread.doWork(ReplicaFetcherThread.scala:98)
+kafka-4  | 	at org.apache.kafka.server.util.ShutdownableThread.run(ShutdownableThread.java:136)
+kafka-4  | [2026-11-01 08:11:59,882] WARN [ReplicaFetcher replicaId=4, leaderId=3, fetcherId=0] Error in response for fetch request (type=FetchRequest, replicaId=4, maxWait=500, minBytes=1, maxBytes=10485760, fetchData={}, isolationLevel=read_uncommitted, removed=, replaced=, metadata=(sessionId=721468969, epoch=31), rackId=) (kafka.server.ReplicaFetcherThread)
+kafka-4  | java.io.IOException: Connection to 3 was disconnected before the response was read
+kafka-4  | 	at org.apache.kafka.clients.NetworkClientUtils.sendAndReceive(NetworkClientUtils.java:100)
+kafka-4  | 	at kafka.server.BrokerBlockingSender.sendRequest(BrokerBlockingSender.scala:114)
+kafka-4  | 	at kafka.server.RemoteLeaderEndPoint.fetch(RemoteLeaderEndPoint.scala:79)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.processFetchRequest(AbstractFetcherThread.scala:317)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3(AbstractFetcherThread.scala:131)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3$adapted(AbstractFetcherThread.scala:130)
+kafka-4  | 	at scala.Option.foreach(Option.scala:437)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.maybeFetch(AbstractFetcherThread.scala:130)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.doWork(AbstractFetcherThread.scala:113)
+kafka-4  | 	at kafka.server.ReplicaFetcherThread.doWork(ReplicaFetcherThread.scala:98)
+kafka-4  | 	at org.apache.kafka.server.util.ShutdownableThread.run(ShutdownableThread.java:136)
+kafka-4  | [2026-11-01 08:11:59,882] WARN [ReplicaFetcher replicaId=4, leaderId=2, fetcherId=0] Error in response for fetch request (type=FetchRequest, replicaId=4, maxWait=500, minBytes=1, maxBytes=10485760, fetchData={}, isolationLevel=read_uncommitted, removed=, replaced=, metadata=(sessionId=758470896, epoch=31), rackId=) (kafka.server.ReplicaFetcherThread)
+kafka-4  | java.io.IOException: Connection to 2 was disconnected before the response was read
+kafka-4  | 	at org.apache.kafka.clients.NetworkClientUtils.sendAndReceive(NetworkClientUtils.java:100)
+kafka-4  | 	at kafka.server.BrokerBlockingSender.sendRequest(BrokerBlockingSender.scala:114)
+kafka-4  | 	at kafka.server.RemoteLeaderEndPoint.fetch(RemoteLeaderEndPoint.scala:79)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.processFetchRequest(AbstractFetcherThread.scala:317)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3(AbstractFetcherThread.scala:131)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3$adapted(AbstractFetcherThread.scala:130)
+kafka-4  | 	at scala.Option.foreach(Option.scala:437)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.maybeFetch(AbstractFetcherThread.scala:130)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.doWork(AbstractFetcherThread.scala:113)
+kafka-4  | 	at kafka.server.ReplicaFetcherThread.doWork(ReplicaFetcherThread.scala:98)
+kafka-4  | 	at org.apache.kafka.server.util.ShutdownableThread.run(ShutdownableThread.java:136)
+kafka-4  | [2026-11-01 08:12:14,565] INFO [ReplicaFetcherManager on broker 4] Removed fetcher for partitions HashSet(__consumer_offsets-22, __consumer_offsets-4, __consumer_offsets-46, __consumer_offsets-34, __consumer_offsets-16, __consumer_offsets-28, __consumer_offsets-10, __consumer_offsets-40) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:12:14,581] INFO [ReplicaFetcherManager on broker 4] Removed fetcher for partitions HashSet(__consumer_offsets-29, __consumer_offsets-8, __consumer_offsets-5, __consumer_offsets-38, __consumer_offsets-35) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [ReplicaFetcherManager on broker 4] Added fetcher to broker 5 for partitions HashMap(__consumer_offsets-8 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=5, host=kafka-5:9092),1,0), __consumer_offsets-38 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=5, host=kafka-5:9092),1,0)) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [ReplicaFetcherManager on broker 4] Added fetcher to broker 6 for partitions HashMap(__consumer_offsets-35 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=6, host=kafka-6:9092),1,0), __consumer_offsets-5 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=6, host=kafka-6:9092),1,17), __consumer_offsets-29 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=6, host=kafka-6:9092),1,0)) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 35 in epoch OptionalInt[1] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-35 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 5 in epoch OptionalInt[1] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-5 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 38 in epoch OptionalInt[1] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-38 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 8 in epoch OptionalInt[1] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-8 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 29 in epoch OptionalInt[1] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-29 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-35 for coordinator epoch OptionalInt[1]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-5 for coordinator epoch OptionalInt[1]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-38 for coordinator epoch OptionalInt[1]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-8 for coordinator epoch OptionalInt[1]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,582] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-29 for coordinator epoch OptionalInt[1]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,587] INFO [ReplicaFetcherManager on broker 4] Removed fetcher for partitions HashSet(__consumer_offsets-9, __consumer_offsets-49, __consumer_offsets-18, __consumer_offsets-24, downtime-experiment-0, __consumer_offsets-48, __consumer_offsets-19, __consumer_offsets-13, __consumer_offsets-43, __consumer_offsets-39) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:12:14,603] INFO [ReplicaFetcherManager on broker 4] Removed fetcher for partitions HashSet(__consumer_offsets-3, __consumer_offsets-33) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:12:14,603] INFO [ReplicaFetcherManager on broker 4] Added fetcher to broker 5 for partitions Map(__consumer_offsets-33 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=5, host=kafka-5:9092),2,0), __consumer_offsets-3 -> InitialFetchState(Some(b6HvOT-NQcqy7nYveakOSQ),BrokerEndPoint(id=5, host=kafka-5:9092),2,0)) (kafka.server.ReplicaFetcherManager)
+kafka-4  | [2026-11-01 08:12:14,604] INFO [ReplicaFetcherThread-0-2]: Shutting down (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,604] INFO [ReplicaFetcher replicaId=4, leaderId=2, fetcherId=0] Disconnecting from node 2 due to socket connection setup timeout. The timeout value is 11273 ms. (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:12:14,604] INFO [ReplicaFetcher replicaId=4, leaderId=2, fetcherId=0] Client requested connection close from node 2 (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:12:14,604] INFO [ReplicaFetcher replicaId=4, leaderId=2, fetcherId=0] Error sending fetch request (sessionId=758470896, epoch=INITIAL) to node 2: (org.apache.kafka.clients.FetchSessionHandler)
+kafka-4  | java.io.IOException: Connection to kafka-2:9092 (id: 2 rack: null) failed.
+kafka-4  | 	at org.apache.kafka.clients.NetworkClientUtils.awaitReady(NetworkClientUtils.java:71)
+kafka-4  | 	at kafka.server.BrokerBlockingSender.sendRequest(BrokerBlockingSender.scala:109)
+kafka-4  | 	at kafka.server.RemoteLeaderEndPoint.fetch(RemoteLeaderEndPoint.scala:79)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.processFetchRequest(AbstractFetcherThread.scala:317)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3(AbstractFetcherThread.scala:131)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3$adapted(AbstractFetcherThread.scala:130)
+kafka-4  | 	at scala.Option.foreach(Option.scala:437)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.maybeFetch(AbstractFetcherThread.scala:130)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.doWork(AbstractFetcherThread.scala:113)
+kafka-4  | 	at kafka.server.ReplicaFetcherThread.doWork(ReplicaFetcherThread.scala:98)
+kafka-4  | 	at org.apache.kafka.server.util.ShutdownableThread.run(ShutdownableThread.java:136)
+kafka-4  | [2026-11-01 08:12:14,604] INFO [ReplicaFetcherThread-0-2]: Stopped (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,604] INFO [ReplicaFetcherThread-0-2]: Shutdown completed (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,605] INFO [ReplicaFetcherThread-0-1]: Shutting down (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,605] INFO [ReplicaFetcher replicaId=4, leaderId=1, fetcherId=0] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 11109 ms. (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:12:14,605] INFO [ReplicaFetcher replicaId=4, leaderId=1, fetcherId=0] Client requested connection close from node 1 (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:12:14,605] INFO [ReplicaFetcher replicaId=4, leaderId=1, fetcherId=0] Error sending fetch request (sessionId=695430589, epoch=INITIAL) to node 1: (org.apache.kafka.clients.FetchSessionHandler)
+kafka-4  | java.io.IOException: Connection to kafka-1:9092 (id: 1 rack: null) failed.
+kafka-4  | 	at org.apache.kafka.clients.NetworkClientUtils.awaitReady(NetworkClientUtils.java:71)
+kafka-4  | 	at kafka.server.BrokerBlockingSender.sendRequest(BrokerBlockingSender.scala:109)
+kafka-4  | 	at kafka.server.RemoteLeaderEndPoint.fetch(RemoteLeaderEndPoint.scala:79)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.processFetchRequest(AbstractFetcherThread.scala:317)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3(AbstractFetcherThread.scala:131)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3$adapted(AbstractFetcherThread.scala:130)
+kafka-4  | 	at scala.Option.foreach(Option.scala:437)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.maybeFetch(AbstractFetcherThread.scala:130)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.doWork(AbstractFetcherThread.scala:113)
+kafka-4  | 	at kafka.server.ReplicaFetcherThread.doWork(ReplicaFetcherThread.scala:98)
+kafka-4  | 	at org.apache.kafka.server.util.ShutdownableThread.run(ShutdownableThread.java:136)
+kafka-4  | [2026-11-01 08:12:14,605] INFO [ReplicaFetcherThread-0-1]: Stopped (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,605] INFO [ReplicaFetcherThread-0-1]: Shutdown completed (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,606] INFO [ReplicaFetcherThread-0-3]: Shutting down (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,606] INFO [ReplicaFetcher replicaId=4, leaderId=3, fetcherId=0] Disconnecting from node 3 due to socket connection setup timeout. The timeout value is 11808 ms. (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:12:14,606] INFO [ReplicaFetcher replicaId=4, leaderId=3, fetcherId=0] Client requested connection close from node 3 (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:12:14,606] INFO [ReplicaFetcher replicaId=4, leaderId=3, fetcherId=0] Error sending fetch request (sessionId=721468969, epoch=INITIAL) to node 3: (org.apache.kafka.clients.FetchSessionHandler)
+kafka-4  | java.io.IOException: Connection to kafka-3:9092 (id: 3 rack: null) failed.
+kafka-4  | 	at org.apache.kafka.clients.NetworkClientUtils.awaitReady(NetworkClientUtils.java:71)
+kafka-4  | 	at kafka.server.BrokerBlockingSender.sendRequest(BrokerBlockingSender.scala:109)
+kafka-4  | 	at kafka.server.RemoteLeaderEndPoint.fetch(RemoteLeaderEndPoint.scala:79)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.processFetchRequest(AbstractFetcherThread.scala:317)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3(AbstractFetcherThread.scala:131)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.$anonfun$maybeFetch$3$adapted(AbstractFetcherThread.scala:130)
+kafka-4  | 	at scala.Option.foreach(Option.scala:437)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.maybeFetch(AbstractFetcherThread.scala:130)
+kafka-4  | 	at kafka.server.AbstractFetcherThread.doWork(AbstractFetcherThread.scala:113)
+kafka-4  | 	at kafka.server.ReplicaFetcherThread.doWork(ReplicaFetcherThread.scala:98)
+kafka-4  | 	at org.apache.kafka.server.util.ShutdownableThread.run(ShutdownableThread.java:136)
+kafka-4  | [2026-11-01 08:12:14,606] INFO [ReplicaFetcherThread-0-3]: Stopped (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,606] INFO [ReplicaFetcherThread-0-3]: Shutdown completed (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,606] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 19 in epoch 2 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-19 for epoch 2 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 18 in epoch 3 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-18 for epoch 3 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 39 in epoch 2 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-39 for epoch 2 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 9 in epoch 2 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-9 for epoch 2 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 24 in epoch 2 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-24 for epoch 2 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-19 in 0 milliseconds for epoch 2, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 43 in epoch 3 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-43 for epoch 3 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-18 in 0 milliseconds for epoch 3, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 13 in epoch 3 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-13 for epoch 3 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-39 in 0 milliseconds for epoch 2, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 49 in epoch 2 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-49 for epoch 2 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupCoordinator 4]: Elected as the group coordinator for partition 48 in epoch 3 (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Scheduling loading of offsets and group metadata from __consumer_offsets-48 for epoch 3 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 3 in epoch OptionalInt[2] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-3 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-9 in 0 milliseconds for epoch 2, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupCoordinator 4]: Resigned as the group coordinator for partition 33 in epoch OptionalInt[2] (kafka.coordinator.group.GroupCoordinator)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Scheduling unloading of offsets and group metadata from __consumer_offsets-33 (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-24 in 0 milliseconds for epoch 2, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-43 in 0 milliseconds for epoch 3, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-13 in 0 milliseconds for epoch 3, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-49 in 0 milliseconds for epoch 2, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Finished loading offsets and group metadata from __consumer_offsets-48 in 0 milliseconds for epoch 3, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-3 for coordinator epoch OptionalInt[2]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,607] INFO [GroupMetadataManager brokerId=4] Finished unloading __consumer_offsets-33 for coordinator epoch OptionalInt[2]. Removed 0 cached offsets and 0 cached groups. (kafka.coordinator.group.GroupMetadataManager)
+kafka-4  | [2026-11-01 08:12:14,733] INFO [ReplicaFetcher replicaId=4, leaderId=6, fetcherId=0] Partition __consumer_offsets-5 has a newer epoch (1) than the current leader. Retry the partition later. (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,733] INFO [ReplicaFetcher replicaId=4, leaderId=6, fetcherId=0] Truncating partition __consumer_offsets-29 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,733] INFO [UnifiedLog partition=__consumer_offsets-29, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:12:14,733] INFO [ReplicaFetcher replicaId=4, leaderId=6, fetcherId=0] Truncating partition __consumer_offsets-35 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,733] INFO [UnifiedLog partition=__consumer_offsets-35, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:12:14,795] INFO [ReplicaFetcher replicaId=4, leaderId=5, fetcherId=0] Truncating partition __consumer_offsets-8 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,796] INFO [UnifiedLog partition=__consumer_offsets-8, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:12:14,796] INFO [ReplicaFetcher replicaId=4, leaderId=5, fetcherId=0] Truncating partition __consumer_offsets-38 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,796] INFO [UnifiedLog partition=__consumer_offsets-38, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:12:14,796] INFO [ReplicaFetcher replicaId=4, leaderId=5, fetcherId=0] Truncating partition __consumer_offsets-3 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,796] INFO [UnifiedLog partition=__consumer_offsets-3, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:12:14,796] INFO [ReplicaFetcher replicaId=4, leaderId=5, fetcherId=0] Truncating partition __consumer_offsets-33 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+kafka-4  | [2026-11-01 08:12:14,796] INFO [UnifiedLog partition=__consumer_offsets-33, dir=/var/lib/kafka/data] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+kafka-4  | [2026-11-01 08:13:03,992] INFO [NodeToControllerChannelManager id=4 name=alter-partition] Client requested disconnect from node 2 (org.apache.kafka.clients.NetworkClient)
+kafka-4  | [2026-11-01 08:13:03,992] INFO [zk-broker-4-to-controller-alter-partition-channel-manager]: Recorded new ZK controller, from now on will use node kafka-5:9092 (id: 5 rack: null) (kafka.server.NodeToControllerRequestThread)
+kafka-4  | [2026-11-01 08:13:04,011] INFO [Partition __consumer_offsets-16 broker=4] ISR updated to 4,2  and version updated to 3 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,033] INFO [Partition __consumer_offsets-48 broker=4] ISR updated to 4,2  and version updated to 4 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,033] INFO [Partition __consumer_offsets-46 broker=4] ISR updated to 4,2  and version updated to 3 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,036] INFO [Partition __consumer_offsets-10 broker=4] ISR updated to 4,6,2  and version updated to 2 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,036] INFO [Partition __consumer_offsets-40 broker=4] ISR updated to 4,6,2  and version updated to 2 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,036] INFO [Partition __consumer_offsets-24 broker=4] ISR updated to 4,6,2  and version updated to 3 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,036] INFO [Partition __consumer_offsets-18 broker=4] ISR updated to 4,2  and version updated to 4 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,036] INFO [Partition downtime-experiment-0 broker=4] ISR updated to 4,2  and version updated to 5 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,063] INFO [Partition __consumer_offsets-48 broker=4] ISR updated to 4,2,1  and version updated to 5 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,076] INFO [Partition __consumer_offsets-16 broker=4] ISR updated to 4,2,3  and version updated to 4 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,076] INFO [Partition __consumer_offsets-13 broker=4] ISR updated to 4,1  and version updated to 4 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,076] INFO [Partition __consumer_offsets-46 broker=4] ISR updated to 4,2,3  and version updated to 4 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,076] INFO [Partition __consumer_offsets-43 broker=4] ISR updated to 4,1  and version updated to 4 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,076] INFO [Partition __consumer_offsets-9 broker=4] ISR updated to 4,6,1  and version updated to 3 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,076] INFO [Partition __consumer_offsets-22 broker=4] ISR updated to 4,5,3  and version updated to 2 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,076] INFO [Partition __consumer_offsets-19 broker=4] ISR updated to 4,6,3  and version updated to 3 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,076] INFO [Partition __consumer_offsets-49 broker=4] ISR updated to 4,6,3  and version updated to 3 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,076] INFO [Partition __consumer_offsets-18 broker=4] ISR updated to 4,2,1  and version updated to 5 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,076] INFO [Partition __consumer_offsets-28 broker=4] ISR updated to 4,5,1  and version updated to 2 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,076] INFO [Partition __consumer_offsets-39 broker=4] ISR updated to 4,6,1  and version updated to 3 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,076] INFO [Partition __consumer_offsets-4 broker=4] ISR updated to 4,6,1  and version updated to 2 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,076] INFO [Partition __consumer_offsets-34 broker=4] ISR updated to 4,6,1  and version updated to 2 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,094] INFO [Partition downtime-experiment-0 broker=4] ISR updated to 4,2,1  and version updated to 6 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,104] INFO [Partition __consumer_offsets-13 broker=4] ISR updated to 4,1,3  and version updated to 5 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,104] INFO [Partition __consumer_offsets-43 broker=4] ISR updated to 4,1,3  and version updated to 5 (kafka.cluster.Partition)
+kafka-4  | [2026-11-01 08:13:04,580] INFO [Partition downtime-experiment-0 broker=4] ISR updated to 4,2,1,3  and version updated to 7 (kafka.cluster.Partition)

@@ -1,0 +1,6 @@
+Connecting to zookeeper:2181
+
+WATCHER::
+
+WatchedEvent state:SyncConnected type:None path:null
+[1, 2, 3, 4, 5, 6]
