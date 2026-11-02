@@ -122,6 +122,8 @@ services:
       - kafka-6
     environment:
       KAFKA_BOOTSTRAP_SERVERS: kafka-1:9092,kafka-2:9092,kafka-3:9092,kafka-4:9092,kafka-5:9092,kafka-6:9092
+      KAFKA_PRODUCER_ACKS: ${KAFKA_PRODUCER_ACKS:-all}
+      KAFKA_PRODUCER_IDEMPOTENCE: ${KAFKA_PRODUCER_IDEMPOTENCE:-true}
       EXPERIMENT_TOPIC: downtime-experiment
     ports:
       - "8080:8080"

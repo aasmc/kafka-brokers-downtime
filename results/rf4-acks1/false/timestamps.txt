@@ -1,0 +1,5 @@
+baseline_finished_utc=2026-11-01T08:11:59Z
+kill_started_utc=2026-11-01T08:11:59Z
+outage_finished_utc=2026-11-01T08:13:02Z
+restart_started_utc=2026-11-01T08:13:02Z
+recovery_finished_utc=2026-11-01T08:13:23Z
